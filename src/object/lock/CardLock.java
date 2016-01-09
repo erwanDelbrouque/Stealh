@@ -1,18 +1,20 @@
-package object.Door;
+package object.lock;
 
 import java.awt.Graphics2D;
 
-import object.lock.CardLock;
-
-public class SecureDoor extends Door {
+/*
+ * LockCard = serrure à ouverture par carte
+ */
+public class CardLock extends Lock{
 	
-	public SecureDoor() {
-		super("Secure door", new CardLock());
+	public CardLock(){
+		super("card lock");
 	}
-
+	
 	@Override
 	public void handleInput() {
 		// TODO Auto-generated method stub
+		
 	}
 	
 	@Override
@@ -25,11 +27,5 @@ public class SecureDoor extends Door {
 	public void update() {
 		// TODO Auto-generated method stub
 		super.update();
-	}
-
-	@Override
-	public void openDoor() {
-		// TODO Auto-generated method stub
-		
 	}
 }

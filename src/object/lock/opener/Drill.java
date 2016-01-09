@@ -1,15 +1,30 @@
 package object.lock.opener;
 
-public class Drill extends WithDelay {
+import java.awt.Graphics2D;
 
-	@Override
-	public void startTime() {
-		//TODO: faire l'écoulement du temps avant ouverture
+import object.lock.Lock;
+
+public class Drill extends Lock{
+ 
+	public Drill() {
+		super("drill");
 	}
-
+	
 	@Override
-	public String getType() {
-		return "drill";
+	public void handleInput() {
+		// TODO Auto-generated method stub
+		
 	}
-
+	
+	@Override
+	public void draw(Graphics2D graph) {
+		// TODO Auto-generated method stub
+		super.draw(graph);
+	}
+	
+	@Override
+	public void update() {
+		// TODO Auto-generated method stub
+		super.update();
+	}
 }

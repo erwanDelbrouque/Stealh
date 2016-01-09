@@ -1,7 +1,11 @@
 package object.lock;
 
-public abstract class Lock {
+import object.Entity;
 
-	public abstract String getType();
+public abstract class Lock extends Entity {
+
+	public Lock(String name) {
+		super(name);
+	}
 	
 }

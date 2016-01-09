@@ -1,20 +1,30 @@
 package object.lock;
 
-import object.lock.opener.Key;
+import java.awt.Graphics2D;
 
 /*
  * KeyLock = serrure avec clé
  */
 public class KeyLock extends Lock{
-
-	protected final Key key;
 	
-	public KeyLock(Key key){
-		this.key = key;
+	public KeyLock(){
+		super("key lock");
 	}
 
 	@Override
-	public String getType() {
-		return "lock key";
+	public void handleInput() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void draw(Graphics2D graph) {
+		// TODO Auto-generated method stub
+		super.draw(graph);
+	}
+	
+	@Override
+	public void update() {
+		// TODO Auto-generated method stub
+		super.update();
 	}
 }
